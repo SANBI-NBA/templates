@@ -18,6 +18,6 @@ This folder also contains a recommended subfolder structure for storing input da
 
 ### csv-templates
 
-This folder contains recommended structure for input data files to be used with the [NBA graphs package]( https://github.com/TashBes/NBA.package).
+This folder contains recommended structure for input data files to be used with the [NBA graphs package]( https://github.com/SANBI-NBA/nbaR).
 
 

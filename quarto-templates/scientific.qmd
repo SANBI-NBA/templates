@@ -167,7 +167,7 @@ It is possible do display both the data that a figure is based on and the figure
 
 library(dplyr)
 library(tidyr)
-library(NBA.package)
+library(nbaR)
 
 dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
 
