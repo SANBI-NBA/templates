@@ -2,6 +2,8 @@
 
 This repository contains the necessary files for NBA content contributors to set up and test their individual pages for the NBA website. It is not intended to function as a website. Therefore the overall website setup, such as the top and side navigation bars are not configured in _quarto.yml.
 
+Reminder: the website NBA is meant to be the equivalent of the synthesis report. It is not a technical report equivalent. You can (and are encouraged to) link to that kind of technical report detail. The addition of references and links to supporting technical detail is a change from the previous synthesis report. However, do not try to include the technical report type detail into the NBA Quarto website documents.
+
 ### quarto-templates
 
 This folder contains two different templates:
