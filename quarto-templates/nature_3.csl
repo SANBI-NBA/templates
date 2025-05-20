@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Nature with DOI</title>
+    <id>http://www.zotero.org/styles/nature-doi</id>
+    <link href="http://www.zotero.org/styles/nature" rel="template"/>
+    <author>
+      <name>Custom Style with DOI</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="science"/>
+    <updated>2025-05-13T00:00:00+00:00</updated>
+  </info>
+
+  <macro name="author">
+    <names variable="author">
+      <name initialize-with="." delimiter=", " name-as-sort-order="first"/>
+      <label form="short" prefix=" " suffix="." strip-periods="true"/>
+      <substitute>
+        <names variable="editor"/>
+      </substitute>
+    </names>
+  </macro>
+
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+
+  <macro name="year-date">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </if>
+      <else>
+        <text term="no date" form="short"/>
+      </else>
+    </choose>
+  </macro>
+
+  <macro name="journal-meta">
+    <group delimiter=" ">
+      <text variable="container-title" form="short" font-style="italic"/>
+      <text variable="volume" font-weight="bold"/>
+      <text variable="page"/>
+      <text macro="year-date" prefix="(" suffix=")"/>
+    </group>
+  </macro>
+
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography hanging-indent="true" et-al-min="6" et-al-use-first="3" second-field-align="flush">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout>
+      <text variable="citation-number" suffix=". "/>
+      <group delimiter=". ">
+        <text macro="author"/>
+        <text macro="title"/>
+        <choose>
+          <if type="article-journal article-magazine article-newspaper" match="any">
+            <text macro="journal-meta"/>
+          </if>
+          <else>
+            <group delimiter=", ">
+              <text variable="publisher"/>
+              <text variable="publisher-place"/>
+              <text macro="year-date"/>
+            </group>
+          </else>
+        </choose>
+      </group>
+      <text variable="DOI" prefix=". https://doi.org/" suffix="."/>
+    </layout>
+  </bibliography>
+</style>
