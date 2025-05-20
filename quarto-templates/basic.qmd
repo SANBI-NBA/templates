@@ -21,7 +21,7 @@ format:
       - default 
       - custom.scss
 language:
-  section-title-footnotes: Notes and references
+  section-title-footnotes: Notes
 footnotes-hover: true
 reference-location: document
 link-external-newwindow: true
