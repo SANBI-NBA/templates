@@ -237,9 +237,13 @@ Add the box content here. It can include text, pictures, tables and graphs. Add 
 
 ## Technical documentation
 
-<!-- the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
 
-<!-- avoid linking to Google Drive or other personal drives that may not be permanent. -->
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
 
 The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
 
@@ -256,51 +260,20 @@ Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the
 ## Recommended citation
 
 ```{r}
-#| echo: false
-#| results: asis
-#| message: false
-#| warning: false
-#| include: true
-#| eval: true
-#| label: lst-citation
+#| output: asis
+#| label: lst-citation-code
 
+library(nbaR) 
+library(knitr)
 library(rmarkdown)
 
-title <- metadata$title
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
 
-# Access the document‑level YAML as a plain list ------------
 meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
 meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
-# 1. ----------- Author string ----------------------------------------------
-# helper: turn "Jo M."  -> "J.M."
-initials <- function(given) {
-  # split on spaces or dots, drop empties, keep first letter, add a dot
-  parts <- unlist(strsplit(given, "[[:space:].]+"))
-  paste0(substring(parts, 1, 1), collapse = ".") |> paste0(".")
-}
-
-authors <- vapply(meta$author, function(a) {
-  fam  <- a$name$family
-  fam  <- sub("^([[:alpha:]])", toupper("\\1"), fam, perl = TRUE)  # cap first letter only
-  inits <- initials(a$name$given)
-  paste0(fam, ", ", inits)
-}, FUN.VALUE = character(1))
-
-author_str <- paste(authors, collapse = ", ") 
-yr <- 2025
-
-# 3. ----------- Remaining pieces -----------------------------------------
-title     <- meta$title
-container <- meta$citation$`container-title`
-publisher <- meta$citation$publisher
-url       <- meta$citation$url
-
-# 4. ----------- Stitch the citation together -----------------------------
-cat(paste0(
-  author_str, " ", yr, ". ", title, ". ",
-  container, ". ", publisher, ". ", url, ".\n\n"
-))
+nba_citation(meta)
 
 ```
 
