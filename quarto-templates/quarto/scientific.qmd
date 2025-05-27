@@ -1,9 +1,12 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
+
 title: "Add the title of your page here" # Compulsory
 subtitle: "Add subtitle here" # Optional: delete if you are not using a subtitle
+
 title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
 # List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
@@ -15,6 +18,7 @@ author:
     affiliations:
       - ref: af1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
+
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -23,11 +27,13 @@ affiliations:
   - id: af1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
     name: Name of Affiliation
+
 # This date determines the PUBLISHED date in the title block
 date: last-modified
+
 # Remember to rename the default .bib file and change the name here
 bibliography: references.bib
-csl: annals-of-the-new-york-academy-of-sciences.csl
+
 # This section sets up the page citation format. DO NOT EDIT
 citation:
   type: webpage
@@ -35,49 +41,8 @@ citation:
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
 # Do not edit or change any of the following entries
-appendix-cite-as: display
+appendix-cite-as: false
 google-scholar: true
-format: 
-  html:
-    include-after-body: # Some random code to make the fig & table caption labels bold
-      text: |
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("figcaption").forEach(e => {e.innerHTML 
-            = e.innerHTML.replace(/((.*?)\.)/, "<strong>$1</strong>")})
-          });
-        </script>
-    crossref:
-      fig-prefix: Figure
-      fig-title: Figure
-      tbl-prefix: Table
-      tbl-title: Table
-      ref-hyperlink: true
-      fig-labels: arabic
-      tbl-labels: arabic
-      subref-labels: alpha a
-      title-delim: "."
-    toc: true
-    toc-location: right
-    toc-depth: 4
-    toc-expand: true
-    template-partials:
-      - partials/title-metadata.html
-      - partials/_title-meta-author.html
-    theme: 
-      - default 
-      - custom.scss
-language:
-  section-title-footnotes: Notes
-  section-title-citation: Recommended citation
-footnotes-hover: true
-reference-location: document
-link-external-newwindow: true
-callout-icon: false
-execute:
-  echo: false 
-  warning: false 
-  message: false
 ---
 
 ------------------------------------------------------------------------
@@ -197,6 +162,7 @@ It is possible do display both the data that a figure is based on and the figure
 
 :::: panel-tabset
 ## Figure
+
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
 ```{r}
@@ -255,16 +221,15 @@ gt(tbl_dat) %>% nba_tbl_theme()
 :::
 
 Download the data [here](http://link_to_your_data).
-:::
-
+::::
 
 ## Information boxes
 
 Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
 
 ::: {#box-1 .callout-note collapse="true"}
-
 ## Box 1. Box title
+
 <!-- it is important to use second-level headings in box titles -->
 
 Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
@@ -273,6 +238,7 @@ Add the box content here. It can include text, pictures, tables and graphs. Add 
 ## Technical documentation
 
 <!-- the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
 <!-- avoid linking to Google Drive or other personal drives that may not be permanent. -->
 
 The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
