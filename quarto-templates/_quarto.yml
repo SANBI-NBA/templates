@@ -3,7 +3,7 @@ project:
 
 editor: visual
 
-#csl: annals-of-the-new-york-academy-of-sciences.csl
+csl: sanbi.csl
 footnotes-hover: true
 reference-location: document
 link-external-newwindow: true

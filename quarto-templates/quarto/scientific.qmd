@@ -115,15 +115,23 @@ Some text with a footnote[^1].
 
 ### References
 
-See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references
+See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references. The references.bib file in the `quarto` folder contains some example references:
 
-Citing a journal article[@harris2019].
+Here is a citation of a journal article[@harris2019].
 
-Citing a book[@megadiversity1997].
+Here is a citation of a book [@megadiversity1997].
 
-Citing a book chapter[@wilson2018].
+Here is a citation of an edited book[@Skowno2019].
 
-Citing a technical report[@vonmaltitz2020carbon].
+Here is a citation of a book chapter [@wilson2018].
+
+Here is a citation of a report [@vonmaltitz2020carbon].
+
+Here is a citation of a website [@nhm2019].
+
+Here is a citation of multiple references [@barger2018; @melaku2024; @vonmaltitz2020carbon]
+
+For a chapter or section in a book that is part of a series (e.g. Vegetation of South Africa) use the `@inproceedings` format[@vegsa2006]
 
 ## Code blocks for graphs, maps and tables
 

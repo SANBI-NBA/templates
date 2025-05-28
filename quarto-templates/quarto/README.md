@@ -36,10 +36,8 @@ One .qmd file represents one page on the NBA website. It is up to you to decide 
 
 Once you have created and renamed a quarto template, the first step is to edit the yaml header.
 
-       
-> [!WARNING]
+> [!WARNING\]
 > yaml code is extremely sensitive to wrong code indentations (the space between the side of the screen and where the text begins). If you get any yaml-related errors when rendering, check that your yaml edits did not accidentally change indentations.
-
 
 Follow these instructions for each template:
 
@@ -174,6 +172,8 @@ Page content is created below the yaml header (the end of the yaml header is ind
 ### .bib file
 
 Your folder must contain a .bib file if your page contains any literature citations. Quarto automatically collects the details of each reference in this file as you cite them. You can use the same .bib file for all your pages. Do not move this file to a different location.
+
+The references.bib file included in this folder contains example references demonstrating how to structure different reference types to be compatible with the SANBI citation style.
 
 ### Input folders
 
