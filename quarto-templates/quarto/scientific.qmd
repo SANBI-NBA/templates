@@ -47,7 +47,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Do not change any of the inline styling {the part in the squiggly brackets}, [other than the colour applied to the statistic](@Lize, it isn't clear to me why you mention changing colour here, as that is specified in the custom.scss and surely we don't want users to go digging in there?). Remember to adjust the column widths to add up to 100%. Try not to add more columns, as more than two columns tend to display poorly on narrow screens. Delete the entire section if you don't want to include statistics on your page-->
+<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
 ::::: columns
 ::: {.column width="50%"}
@@ -243,7 +243,6 @@ Additional information can be added in collapsible information boxes using [call
 <!-- it is important to use second-level headings in box titles -->
 
 Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
-
 :::
 
 ## Technical documentation
