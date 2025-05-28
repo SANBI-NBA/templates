@@ -4,4 +4,5 @@ This project folder contains all the supporting files to enable individual contr
 
 The scientific.qmd quarto document template makes use of functions in the [nbaR package](https://github.com/SANBI-NBA/nbaR), so make sure you have an updated version of that package installed (i.e. reinstall it if you get any errors such as 'could not find function "nba_citation"), following the installation instructions on its landing page.
 
-> \[!TIP\] When working on your Quarto pages in RStudio, always start by opening the `quarto-templates.Rproj` file in this folder, which ensures that relative file paths are working correctly.
+> [!TIP\] 
+> When working on your Quarto pages in RStudio, always start by opening the `quarto-templates.Rproj` file in this folder, which ensures that relative file paths are working correctly.
