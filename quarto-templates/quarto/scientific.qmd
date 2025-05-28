@@ -47,7 +47,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Do not change any of the inline styling, other than the colour applied to the statistic. Remember to adjust the column widths to add up to 100%. Try not to add more columns, as more than two columns tend to display poorly on narrow screens. Delete the entire section if you don't want to include statistics on your page-->
+<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Do not change any of the inline styling {the part in the squiggly brackets}, [other than the colour applied to the statistic](@Lize, it isn't clear to me why you mention changing colour here, as that is specified in the custom.scss and surely we don't want users to go digging in there?). Remember to adjust the column widths to add up to 100%. Try not to add more columns, as more than two columns tend to display poorly on narrow screens. Delete the entire section if you don't want to include statistics on your page-->
 
 ::::: columns
 ::: {.column width="50%"}
@@ -147,7 +147,8 @@ Add an appropriate descriptive caption next to **fig-cap.**
 #| label: fig-ref
 #| fig-cap: "Add figure caption here." 
 
-# Add R code for generating figure here
+# Add R code for generating figure here, e.g.
+nbaR::nba_plot(nbaR::NBA_example_thr_data, `OVERALL types`, 2:5, CHRT = "bar", NUM = TRUE, LAB = "Percentage of ecosystem types")
 
 ```
 
@@ -160,7 +161,8 @@ Follow the same system for creating tables. Do not use the visual editor to inse
 #| tbl-cap: "Add table caption here." 
 #| classes: plain
 
-# Add R code for generating table here
+# Add R code for generating table here, e.g.
+nbaR::nba_tbl(nbaR::NBA_example_pro_data)
 
 ```
 
@@ -228,7 +230,7 @@ gt(tbl_dat) %>% nba_tbl_theme()
 ```
 :::
 
-Download the data [here](http://link_to_your_data).
+Download the data [here](http://insert_your_link_to_your_data).
 ::::
 
 ## Information boxes
@@ -241,6 +243,7 @@ Additional information can be added in collapsible information boxes using [call
 <!-- it is important to use second-level headings in box titles -->
 
 Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+
 :::
 
 ## Technical documentation

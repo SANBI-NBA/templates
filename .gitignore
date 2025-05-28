@@ -52,7 +52,7 @@ rsconnect/
 quarto-templates/.quarto/
 
 # Any html versions of template files
-quarto-templates/*.html
+quarto-templates/quarto/*.html
 !quarto-templates/partials/*.html
 
 # Any directories ending in _files
