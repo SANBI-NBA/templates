@@ -1,0 +1,129 @@
+---
+title: "Boxes"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+execute:
+  echo: true 
+  warning: false 
+  message: false
+---
+
+This file contains examples and code for creating component-specific styled boxes. Boxes are based on the [Callout Block format](https://quarto.org/docs/authoring/callouts.html) of Quarto.
+
+Important points to remember when using boxes:
+
+1.  If you use a component or realm colour for your module banner, you should use the corresponding box styling. If you are using grey (for contextual content) then use the standard format (`.callout-note`).
+
+2.  Remember to use `#Box-boxname` if you want to cross-reference to a box in your text. You cross-reference using the link format: `[Display text](#Box-boxname)`. Remember that boxes do not automatically number like Figures and Tables.
+
+3.  Do not use any of the other Quarto box styling (`warning`, `important`, `tip`, or `caution`).
+
+## Examples
+
+### Box for use with basic template (or any content using grey banners)
+
+``` markdown
+::: {#box-1 .callout-note title="Box 1. Note" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-1 .callout-note title="Box 1. Note" collapse="true"}
+Box content
+:::
+
+Things to note:
+
+-   start with the box's cross-reference code `#box-1`
+
+-   Use `title="Box title"` if you don't want the box title to show up in your contents (right hand side of the page). Any header levels used inside the box content section will show up in your page contents list.
+
+-   `collapse="true"` automatically hides the box content and only shows the box title. User has to click on arrow to show content.
+
+### Code snippets for components/realms
+
+Just copy the appropriate one here and adjust for your content.
+
+#### Terrestrial
+
+``` markdown
+::: {#box-2 .callout-note .terrestrial title="Box 2. Terrestrial box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-2 .callout-note .terrestrial title="Box 2. Terrestrial box" collapse="true"}
+Box content
+:::
+
+#### Freshwater
+
+``` markdown
+::: {#box-3 .callout-note .freshwater title="Box 3. Freshwater box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-3 .callout-note .freshwater title="Box 3. Freshwater box" collapse="true"}
+Box content
+:::
+
+#### Estuarine
+
+``` markdown
+::: {#box-4 .callout-note .estuarine title="Box 4. Estuarine box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-4 .callout-note .estuarine title="Box 4. Estuarine box" collapse="true"}
+Box content
+:::
+
+#### Marine
+
+``` markdown
+::: {#box-5 .callout-note .marine title="Box 5. Marine box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-5 .callout-note .marine title="Box 5. Marine box" collapse="true"}
+Box content
+:::
+
+#### Species
+
+``` markdown
+::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
+Box content
+:::
+
+#### Coast
+
+``` markdown
+::: {#box-7 .callout-note .coast title="Box 7. Coast box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-7 .callout-note .coast title="Box 7. Coast box" collapse="true"}
+Box content
+:::
+
+#### Genetics
+
+``` markdown
+::: {#box-8 .callout-note .genetics title="Box 8. Genetics box" collapse="true"}
+Box content
+:::
+```
+
+::: {#box-8 .callout-note .genetics title="Box 8. Genetics box" collapse="true"}
+Box content
+:::
