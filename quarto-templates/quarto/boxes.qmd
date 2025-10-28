@@ -29,7 +29,7 @@ Box content
 ```
 
 ::: {#box-1 .callout-note title="Box 1. Note" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 Things to note:
@@ -48,82 +48,82 @@ Just copy the appropriate one here and adjust for your content.
 
 ``` markdown
 ::: {#box-2 .callout-note .terrestrial title="Box 2. Terrestrial box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-2 .callout-note .terrestrial title="Box 2. Terrestrial box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Freshwater
 
 ``` markdown
 ::: {#box-3 .callout-note .freshwater title="Box 3. Freshwater box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-3 .callout-note .freshwater title="Box 3. Freshwater box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Estuarine
 
 ``` markdown
 ::: {#box-4 .callout-note .estuarine title="Box 4. Estuarine box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-4 .callout-note .estuarine title="Box 4. Estuarine box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Marine
 
 ``` markdown
 ::: {#box-5 .callout-note .marine title="Box 5. Marine box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-5 .callout-note .marine title="Box 5. Marine box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Species
 
 ``` markdown
 ::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Coast
 
 ``` markdown
 ::: {#box-7 .callout-note .coast title="Box 7. Coast box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-7 .callout-note .coast title="Box 7. Coast box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 
 #### Genetics
 
 ``` markdown
 ::: {#box-8 .callout-note .genetics title="Box 8. Genetics box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
 ```
 
 ::: {#box-8 .callout-note .genetics title="Box 8. Genetics box" collapse="true"}
-Box content
+Box content with linked [text](https://quarto.org/docs/authoring/callouts.html)
 :::
